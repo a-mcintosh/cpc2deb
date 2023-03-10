@@ -9,5 +9,5 @@ Installed-Size: 12000
 Architecture: i386
 Depends:
 Recommends: git
-Description: Understand smudge & clean 05236e14
+Description: Understand smudge & clean 32043df4
 
