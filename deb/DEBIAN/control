@@ -1,0 +1,13 @@
+Source: lsb-vima.austin.tx.us
+Section: devel
+Maintainer: Aubrey McIntosh <aubrey.mcintosh@utexas.edu>
+Homepage: https://github.com/amcintosh/template
+Package: testDeb2Inst
+Version: 0.0.000
+Priority: optional
+Installed-Size: 12000
+Architecture: i386
+Depends:
+Recommends: git
+Description: Understand smudge & clean 05236e14
+
