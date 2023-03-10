@@ -2,4 +2,5 @@ preinst filter=testDeb
 postinst filter=testDeb
 prerm filter=testDeb
 postrm filter=testDeb
-control filter=testSN, testDeb
+control filter=testSN
+
