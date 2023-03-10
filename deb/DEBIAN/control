@@ -3,7 +3,7 @@ Section: devel
 Maintainer: Aubrey McIntosh <aubrey.mcintosh@utexas.edu>
 Homepage: https://github.com/amcintosh/template
 Package: testDeb2Inst
-Version: 0.0.002
+Version: 0.0.003
 Priority: optional
 Installed-Size: 12000
 Architecture: i386
