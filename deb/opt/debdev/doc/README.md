@@ -13,7 +13,7 @@ The shell scripts included in debdev0/deb/DEBIAN announce themselves, and the gi
 EXAMPLE
 
 dpkg-deb -b /opt/debdev0/deb /etc/opt/template/debdev_0.0.001-focal-i386.deb
-deb -i /etc/opt/template/debdev_0.0.001-focal-i386.deb
+sudo apt install -o Acquire::AllowUnsizedPackages=1 /etc/opt/template/debdev_0.0.001-focal-i386.deb
 deb -r debdev
 
 

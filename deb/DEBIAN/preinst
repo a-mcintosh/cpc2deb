@@ -2,6 +2,10 @@
 #  ----------------------------------------------------------------
 #  re-arm /opt/template0/deb; n.b. cp omits .git
 #  ----------------------------------------------------------------
-echo start preinst 32043df4
-echo finish preinst 32043df4
+echo start preinst e9a77bc3
+if [ -d /opt ] 
+then 
+	df /opt
+fi
+echo finish preinst e9a77bc3
 

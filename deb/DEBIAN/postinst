@@ -2,6 +2,19 @@
 #  ----------------------------------------------------------------
 #  re-arm /opt/template0/deb; n.b. cp omits .git
 #  ----------------------------------------------------------------
-echo start postinst 32043df4
-echo finish postinst 32043df4
+echo start postinst e9a77bc3
+echo Postinst works in `pwd`
+mkdir -p /opt/debdev/lib
+
+pushd /opt/debdev/lib
+p7zip -d /opt/debdev/distr/BlackBox-2207-core.7z
+popd
+
+if [ -d /opt ] 
+then 
+	df /opt
+fi
+mkdir -p /usr/local/share/applications
+ln -s /opt/debdev/share/applications/CPC.desktop /usr/local/share/applications/debdev.desktop
+echo finish postinst e9a77bc3
 

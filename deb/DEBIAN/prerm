@@ -2,6 +2,15 @@
 #  ----------------------------------------------------------------
 #  re-arm /opt/template0/deb; n.b. cp omits .git
 #  ----------------------------------------------------------------
-echo start prerm 32043df4
-echo finish prerm 32043df4
+echo start prerm e9a77bc3
+if [ -d /opt/debdev/lib ] 
+then 
+	rm -r /opt/debdev/lib 
+fi
+
+if [ -e /usr/local/share/applications/debdev.desktop ] 
+then 
+	rm -r /usr/local/share/applications/debdev.desktop
+fi
+echo finish prerm e9a77bc3
 
