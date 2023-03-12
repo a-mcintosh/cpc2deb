@@ -6,7 +6,7 @@ Package: debdev
 Version: 0.0.009
 Priority: optional
 Size: 7168
-Installed-Size: 7168
+Installed-Size: 33088
 Architecture: amd64
 Depends: p7zip, wine
 Recommends: awk, git
