@@ -1,11 +1,9 @@
 #!/bin/bash
 #  ----------------------------------------------------------------
-#  re-arm /opt/template0/deb; n.b. cp omits .git
+#  The /opt directory exists on exit.  Display available space.
 #  ----------------------------------------------------------------
-echo start preinst e9a77bc3
-if [ -d /opt ] 
-then 
-	df /opt
-fi
-echo finish preinst e9a77bc3
+echo start preinst 32043df4
+mkdir -p /opt
+df /opt
+echo finish preinst 32043df4
 

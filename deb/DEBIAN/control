@@ -3,12 +3,12 @@ Section: devel
 Maintainer: Aubrey McIntosh <aubrey.mcintosh@utexas.edu>
 Homepage: https://github.com/amcintosh/CPC
 Package: cpc
-Version: 0.0.011
+Version: 0.2301.002
 Priority: optional
 Size: 7168
 Installed-Size: 33088
 Architecture: amd64
-Depends: p7zip, wine
+Pre-Depends: wine, p7zip-full
 Recommends: awk, git
 Description: Understand smudge & clean 32043df4
 

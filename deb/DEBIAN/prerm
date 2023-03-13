@@ -1,16 +1,18 @@
 #!/bin/bash
 #  ----------------------------------------------------------------
-#  re-arm /opt/template0/deb; n.b. cp omits .git
+#  remove files created by postinst
 #  ----------------------------------------------------------------
-echo start prerm e9a77bc3
-if [ -d /opt/CPC/lib ] 
+echo start prerm 32043df4
+
+if [ -d /opt/CPC/BlackBox-2302-core ] 
 then 
-	rm -r /opt/CPC/lib 
+	rm -r /opt/CPC/BlackBox-2302-core
 fi
 
-if [ -e /usr/local/share/applications/CPC.desktop ] 
+if [ -f /usr/local/share/applications/CPC.desktop ] 
 then 
 	rm -r /usr/local/share/applications/CPC.desktop
 fi
+
 echo finish prerm 32043df4
 

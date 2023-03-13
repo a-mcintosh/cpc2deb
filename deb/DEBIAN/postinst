@@ -1,25 +1,35 @@
 #!/bin/bash
 #  ----------------------------------------------------------------
-#  re-arm /opt/template0/deb; n.b. cp omits .git
+#  unpack the CPC archive.  Install a .desktop file
 #  ----------------------------------------------------------------
-echo start postinst e9a77bc3
-echo Postinst works in `pwd`
-mkdir -p /opt/CPC/lib
+echo start postinst 32043df4
+echo during Postinst, pwd is `pwd`
 
-pushd /opt/CPC/lib
-p7zip -d /opt/CPC/distr/BlackBox-2207-core.7z 2>/dev/null
+#The filename changes frequently.
+#if [ ! -e /opt/CPC/distr/BlackBox-2302-core.7z ] 
+#then
+#	mkdir -p /opt/CPC/distr
+#	pushd  /opt/CPC/distr
+#	wget	http://www.zinnamturm.eu/pac/BlackBox-2302-core.7z
+#	popd
+#fi
+
+pushd /opt/CPC
+  7za x distr/BlackBox-2302-core.7z
+mkdir -p lib/Extras/{Code,Docu,Mod,Rsrc}
 popd
 
-if [ -d /opt ] 
-then 
-	df /opt
-fi
 mkdir -p /usr/local/share/applications
-ln -s /opt/CPC/share/applications/CPC.desktop /usr/local/share/applications/CPC.desktop
+ln -s /opt/CPC/share/applications/CPC.desktop 	/usr/local/share/applications/CPC.desktop
 
-mkdir -p /tmp/cpc
-cd /tmp/cpc
-env WINEPREFIX=/tmp/cpc/.wine wine /opt/CPC/lib/BlackBox.exe /O /opt/CPC/doc/SetupAutostart.odc /USE . &
+#  ----------------------------------------------------------------
+#  display information during install.  Pre-Depends: wine is set in
+#  the control file, but this fails if wine is not previously installed.
+#  ----------------------------------------------------------------
+mkdir -p /tmp/cpc/32043df4
+cd /tmp/cpc/32043df4
+env WINEPREFIX=/tmp/cpc/32043df4/.wine wine /opt/CPC/lib/BlackBox.exe /O /opt/CPC/doc/SetupAutostart.odc /USE . &
 
-echo finish postinst 2e199523
+df /opt
+echo finish postinst 32043df4
 

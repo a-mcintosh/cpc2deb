@@ -1,7 +1,7 @@
 #!/bin/bash
 #  ----------------------------------------------------------------
-#  re-arm /opt/template0/deb; n.b. cp omits .git
+#  Announces itself
 #  ----------------------------------------------------------------
-echo start postrm e9a77bc3
-echo finish postrm e9a77bc3
+echo start postrm 32043df4
+echo finish postrm 32043df4
 
