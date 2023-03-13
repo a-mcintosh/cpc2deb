@@ -2,13 +2,13 @@ Source: lsb-vima.austin.tx.us
 Section: devel
 Maintainer: Aubrey McIntosh <aubrey.mcintosh@utexas.edu>
 Homepage: https://github.com/amcintosh/CPC
-Package: CPC
-Version: 0.0.009
+Package: cpc
+Version: 0.0.011
 Priority: optional
 Size: 7168
 Installed-Size: 33088
 Architecture: amd64
 Depends: p7zip, wine
 Recommends: awk, git
-Description: Understand smudge & clean e9a77bc3
+Description: Understand smudge & clean 32043df4
 

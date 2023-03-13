@@ -16,5 +16,10 @@ then
 fi
 mkdir -p /usr/local/share/applications
 ln -s /opt/CPC/share/applications/CPC.desktop /usr/local/share/applications/CPC.desktop
-echo finish postinst e9a77bc3
+
+mkdir -p /tmp/cpc
+cd /tmp/cpc
+env WINEPREFIX=/tmp/cpc/.wine wine /opt/CPC/lib/BlackBox.exe /O /opt/CPC/doc/SetupAutostart.odc /USE . &
+
+echo finish postinst 32043df4
 

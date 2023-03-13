@@ -12,5 +12,5 @@ if [ -e /usr/local/share/applications/CPC.desktop ]
 then 
 	rm -r /usr/local/share/applications/CPC.desktop
 fi
-echo finish prerm e9a77bc3
+echo finish prerm 32043df4
 
