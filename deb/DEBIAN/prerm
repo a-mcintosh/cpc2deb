@@ -3,14 +3,14 @@
 #  re-arm /opt/template0/deb; n.b. cp omits .git
 #  ----------------------------------------------------------------
 echo start prerm e9a77bc3
-if [ -d /opt/debdev/lib ] 
+if [ -d /opt/CPC/lib ] 
 then 
-	rm -r /opt/debdev/lib 
+	rm -r /opt/CPC/lib 
 fi
 
-if [ -e /usr/local/share/applications/debdev.desktop ] 
+if [ -e /usr/local/share/applications/CPC.desktop ] 
 then 
-	rm -r /usr/local/share/applications/debdev.desktop
+	rm -r /usr/local/share/applications/CPC.desktop
 fi
 echo finish prerm e9a77bc3
 

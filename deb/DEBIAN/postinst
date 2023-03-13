@@ -4,10 +4,10 @@
 #  ----------------------------------------------------------------
 echo start postinst e9a77bc3
 echo Postinst works in `pwd`
-mkdir -p /opt/debdev/lib
+mkdir -p /opt/CPC/lib
 
-pushd /opt/debdev/lib
-p7zip -d /opt/debdev/distr/BlackBox-2207-core.7z
+pushd /opt/CPC/lib
+p7zip -d /opt/CPC/distr/BlackBox-2207-core.7z
 popd
 
 if [ -d /opt ] 
@@ -15,6 +15,6 @@ then
 	df /opt
 fi
 mkdir -p /usr/local/share/applications
-ln -s /opt/debdev/share/applications/CPC.desktop /usr/local/share/applications/debdev.desktop
+ln -s /opt/CPC/share/applications/CPC.desktop /usr/local/share/applications/CPC.desktop
 echo finish postinst e9a77bc3
 

@@ -1,8 +1,8 @@
 Source: lsb-vima.austin.tx.us
 Section: devel
 Maintainer: Aubrey McIntosh <aubrey.mcintosh@utexas.edu>
-Homepage: https://github.com/amcintosh/debdev
-Package: debdev
+Homepage: https://github.com/amcintosh/CPC
+Package: CPC
 Version: 0.0.009
 Priority: optional
 Size: 7168
