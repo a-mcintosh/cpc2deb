@@ -7,7 +7,7 @@ echo Postinst works in `pwd`
 mkdir -p /opt/CPC/lib
 
 pushd /opt/CPC/lib
-p7zip -d /opt/CPC/distr/BlackBox-2207-core.7z
+p7zip -d /opt/CPC/distr/BlackBox-2207-core.7z 2>/dev/null
 popd
 
 if [ -d /opt ] 
@@ -21,5 +21,5 @@ mkdir -p /tmp/cpc
 cd /tmp/cpc
 env WINEPREFIX=/tmp/cpc/.wine wine /opt/CPC/lib/BlackBox.exe /O /opt/CPC/doc/SetupAutostart.odc /USE . &
 
-echo finish postinst 32043df4
+echo finish postinst 2e199523
 
