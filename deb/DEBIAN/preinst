@@ -3,7 +3,10 @@
 #  The /opt directory exists on exit.  Display available space.
 #  ----------------------------------------------------------------
 echo start preinst 05236e14
-mkdir -p /opt
+adduser --system --group --home /opt/cpc cpc
+chmod g+s /opt/cpc
 df /opt
+
+
 echo finish preinst 05236e14
 
