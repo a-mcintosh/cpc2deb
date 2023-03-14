@@ -2,7 +2,7 @@
 #  ----------------------------------------------------------------
 #  unpack the CPC archive.  Install a .desktop file
 #  ----------------------------------------------------------------
-echo start postinst 4a5a651a
+echo start postinst 05236e14
 echo during Postinst, pwd is `pwd`
 
 #The filename changes frequently.
@@ -29,11 +29,11 @@ ln -s /opt/cpc/share/applications/cpc.desktop 	/usr/local/share/applications/cpc
 chgrp -R adm /opt/cpc
 chmod -R g+w /opt/cpc
 
-mkdir -p /tmp/cpc/4a5a651a
+mkdir -p /tmp/cpc/05236e14
 cd /opt/cpc/etc
-env WINEPREFIX=/tmp/cpc/4a5a651a/.wine wine /opt/cpc/lib/BlackBox.exe /USE . &
+env WINEPREFIX=/tmp/cpc/05236e14/.wine wine /opt/cpc/lib/BlackBox.exe /USE . &
 
 
 df /opt
-echo finish postinst 4a5a651a
+echo finish postinst 05236e14
 

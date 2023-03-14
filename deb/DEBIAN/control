@@ -10,5 +10,5 @@ Installed-Size: 33088
 Architecture: amd64
 Pre-Depends: wine, p7zip-full
 Recommends: awk, git
-Description: Understand smudge & clean 32043df4
+Description: 05236e14 package the CPC distribution
 

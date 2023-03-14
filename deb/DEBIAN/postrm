@@ -2,6 +2,6 @@
 #  ----------------------------------------------------------------
 #  Announces itself
 #  ----------------------------------------------------------------
-echo start postrm 4a5a651a
-echo finish postrm 4a5a651a
+echo start postrm 05236e14
+echo finish postrm 05236e14
 

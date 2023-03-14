@@ -10,7 +10,7 @@ sed "s/$oldV/$newV/g" < /tmp/${gitID8}/source | testSmudge.sh
 
 
 CODENAME=`grep CODENAME /etc/lsb-release | sed 's/DISTRIB_CODENAME=//g'`
-touch /tmp/${gitID8}/cpc-${newV}-${CODENAME}-amd64.deb
+touch /tmp/${gitID8}/CPC-${newV}-${CODENAME}-amd64.deb
 NN=`echo $newV | sed 's/Version: //g'`
 echo cpc_${NN}-${CODENAME}-amd64.deb > /tmp/${gitID8}/debName
 

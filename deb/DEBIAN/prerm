@@ -2,7 +2,7 @@
 #  ----------------------------------------------------------------
 #  remove files created by postinst
 #  ----------------------------------------------------------------
-echo start prerm 4a5a651a
+echo start prerm 05236e14
 
 if [ -d /opt/cpc/BlackBox-2302-core ] 
 then 
@@ -14,5 +14,5 @@ then
 	rm -r /usr/local/share/applications/cpc.desktop
 fi
 
-echo finish prerm 4a5a651a
+echo finish prerm 05236e14
 
