@@ -8,3 +8,9 @@ oldV=`cat < /tmp/${gitID8}/ver`
 newV=`echo $oldV | awk -F. -v OFS=. 'NF==1{print ++$NF}; NF>1{if(length($NF+1)>length($NF))$(NF-1)++; $NF=sprintf("%0*d", length($NF), ($NF+1)%(10^length($NF))); print}'`
 sed "s/$oldV/$newV/g" < /tmp/${gitID8}/source | testSmudge.sh
 
+
+CODENAME=`grep CODENAME /etc/lsb-release | sed 's/DISTRIB_CODENAME=//g'`
+touch /tmp/${gitID8}/cpc-${newV}-${CODENAME}-amd64.deb
+NN=`echo $newV | sed 's/Version: //g'`
+echo cpc_${NN}-${CODENAME}-amd64.deb > /tmp/${gitID8}/debName
+

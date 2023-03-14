@@ -2,8 +2,8 @@
 #  ----------------------------------------------------------------
 #  The /opt directory exists on exit.  Display available space.
 #  ----------------------------------------------------------------
-echo start preinst 32043df4
+echo start preinst 4a5a651a
 mkdir -p /opt
 df /opt
-echo finish preinst 32043df4
+echo finish preinst 4a5a651a
 

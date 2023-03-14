@@ -2,17 +2,17 @@
 #  ----------------------------------------------------------------
 #  remove files created by postinst
 #  ----------------------------------------------------------------
-echo start prerm 32043df4
+echo start prerm 4a5a651a
 
-if [ -d /opt/CPC/BlackBox-2302-core ] 
+if [ -d /opt/cpc/BlackBox-2302-core ] 
 then 
-	rm -r /opt/CPC/BlackBox-2302-core
+	rm -r /opt/cpc/BlackBox-2302-core
 fi
 
-if [ -f /usr/local/share/applications/CPC.desktop ] 
+if [ -f /usr/local/share/applications/cpc.desktop ] 
 then 
-	rm -r /usr/local/share/applications/CPC.desktop
+	rm -r /usr/local/share/applications/cpc.desktop
 fi
 
-echo finish prerm 32043df4
+echo finish prerm 4a5a651a
 

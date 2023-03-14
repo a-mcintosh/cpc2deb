@@ -1,11 +1,11 @@
 [Desktop Entry]
 Type=Application
-Exec=wine /opt/CPC/lib/BlackBox.exe /USE .
+Exec=gtk-launch cpc
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
 Name[en_US]=ComponentPascal
 Name=ComponentPascal
 Comment[en_US]=A universal CPC desktop file. N.b. the use of relative paths, possibly to softlinks
-Path=
+Path=opt/cpc/lib
 
