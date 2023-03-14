@@ -16,7 +16,6 @@ echo during Postinst, pwd is `pwd`
 
 pushd /opt/cpc
   7za x distr/BlackBox-2302-core.7z
-mkdir -p lib/Extras/{Code,Docu,Mod,Rsrc}
 popd
 
 mkdir -p /usr/local/share/applications

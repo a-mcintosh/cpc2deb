@@ -9,6 +9,12 @@ then
 	rm -r /opt/cpc/BlackBox-2302-core
 fi
 
+if [ -d /opt/cpc/lib ] 
+then 
+	touch /opt/cpc/lib/not_empty
+	rm -r /opt/cpc/lib
+fi
+
 if [ -f /usr/local/share/applications/cpc.desktop ] 
 then 
 	rm -r /usr/local/share/applications/cpc.desktop
