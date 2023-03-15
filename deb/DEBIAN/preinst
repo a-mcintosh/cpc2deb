@@ -4,7 +4,8 @@
 #  ----------------------------------------------------------------
 echo start preinst 05236e14
 adduser --system --group --home /opt/cpc cpc
-chmod g+s /opt/cpc
+chmod a+w,g+s,+t /opt/cpc
+
 df /opt
 
 
