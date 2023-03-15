@@ -33,10 +33,11 @@ I have used it to install CPC.  I am sure that it has some rough user experience
 
 
 ##### 8MC2kMMxmjWCEPC81yjYy2bhCQeeU5RTa8
+* [CPC repository](http://www.zinnamturm.eu/ "Component Pascal Collection")
+* [cpc2deb repository](https://github.com/a-mcintosh/cpc2deb.git "github repository")
 * [Markdown Tutorial](https://agea.github.io/tutorial.md "Markdown Tutorial")
-* [github repository](https://github.com/a-mcintosh/cpc2deb.git "github repository")
-* [rational to place into /opt](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch03s13.html "3.13. /opt : Add-on application software packages")
-* [To-Do: take this under consideration:](http://manpages.ubuntu.com/manpages/jammy/en/man1/git-buildpackage.1.html "Maintain Debian packages in Git")
+* [Why I installed to /opt](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch03s13.html "3.13. /opt : Add-on application software packages")
+* [Unred, probably important, Git package helpers](http://manpages.ubuntu.com/manpages/jammy/en/man1/git-buildpackage.1.html "Maintain Debian packages in Git")
  
  
  -- 5f8d0b7f
