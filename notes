@@ -1,0 +1,28 @@
+
+ 1921  git config --list --global
+
+
+$ git config --local filter.munge-project-identifier.smudge /Users/hsoi/Documents/BNR/Development/Projects/Fred/code/scripts/git-filter-smudge-project-identifier.sh
+$ git config --local filter.munge-project-identifier.clean /Users/hsoi/Documents/BNR/Development/Projects/Fred/code/scripts/git-filter-clean-project-identifier.sh
+
+
+[filter "gitid"]
+	clean = clean-gitID.sh
+	smudge = smudge-gitID.sh
+
+global
+user.name=Aubrey McIntosh, PhD
+user.email=aubrey.mcintosh@utexas.edu
+filter.gitid.clean=clean-gitID.sh
+filter.gitid.smudge=smudge-gitID.sh
+
+local
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+filter.testDeb.smudge=/opt/bin/testSmudge.sh
+filter.testDeb.clean=/opt/bin/testClean.sh
+filter.testSN.smudge=/opt/bin/testSN.sh
+filter.testSN.clean=/opt/bin/testClean.sh
+
