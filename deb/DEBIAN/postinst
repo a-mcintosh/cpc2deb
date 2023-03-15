@@ -15,9 +15,14 @@ echo during Postinst, pwd is `pwd`
 #fi
 
 pushd /opt/cpc
+if [ -f distr/BlackBox-2302-core.7z ] 
+then 
   7za x distr/BlackBox-2302-core.7z
+fi
 popd
-chgrp -R cpc /opt/cpc
+
+#chgrp -R cpc /opt/cpc
+chmod -R ugo+X /opt/cpc
 
 mkdir -p /usr/local/share/applications
 ln -s /opt/cpc/share/applications/cpc.desktop 	/usr/local/share/applications/cpc.desktop
@@ -27,14 +32,11 @@ ln -s /opt/cpc/share/applications/cpc.desktop 	/usr/local/share/applications/cpc
 #  is set in the control file, but this fails if wine is not 
 #  previously installed.
 #  ----------------------------------------------------------------
-#chmod -R g+w /opt/cpc/lib/.
 
 mkdir -p /tmp/cpc/05236e14
 cd /opt/cpc/etc
 
-# su cpc #was denied
 env WINEPREFIX=/tmp/cpc/05236e14/.wine wine /opt/cpc/lib/BlackBox.exe /USE . &
-
 
 df /opt
 echo finish postinst 05236e14

@@ -3,5 +3,9 @@
 #  Announces itself
 #  ----------------------------------------------------------------
 echo start postrm 05236e14
+if [ "$action" = "purge" ] ; then
+	deluser cpc
+fi
+
 echo finish postrm 05236e14
 

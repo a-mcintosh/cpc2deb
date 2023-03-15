@@ -3,12 +3,12 @@ Section: devel
 Maintainer: Aubrey McIntosh <aubrey.mcintosh@utexas.edu>
 Homepage: https://github.com/amcintosh/CPC
 Package: cpc
-Version: 1.8.2302.039
+Version: 1.8.2302.043
 Priority: optional
 Size: 7168
 Installed-Size: 33088
 Architecture: amd64
 Pre-Depends: wine, p7zip-full
-Recommends: awk, git
+Recommends:
 Description: 05236e14 package the CPC distribution
 
