@@ -19,10 +19,12 @@ TO INSTALL, use the Linux commands
 1. git clone *git@github.com:a-mcintosh/cpc2deb.git* **/opt/cpc2deb**	#online
 2. cd /opt/cpc2deb/deb/opt/cpc	
 3. wget http://zinnamturm.eu/pac/BlackBox-2302-core.7z	#online
-4. dpkg-deb --root-owner-group -b /opt/cpc2deb/deb /etc/opt/template/cpc_1.8.2302.039-focal_amd64.deb
-5. sudo apt install -o Acquire::AllowUnsizedPackages=1 /etc/opt/template/cpc_1.8.2302.039-focal_amd64.deb
+4. #create the deb file
+5. dpkg-deb --root-owner-group -b /opt/cpc2deb/deb /etc/opt/template/cpc_1.8.2302.039-focal_amd64.deb
+6. #install the deb file
+7. sudo apt install -o Acquire::AllowUnsizedPackages=1 /etc/opt/template/cpc_1.8.2302.039-focal_amd64.deb
 
-TO REMOVE
+TO REMOVE.  **N.b.** *this removes account cpc*
 1. deb -r cpc
 
 
