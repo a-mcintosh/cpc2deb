@@ -2,7 +2,8 @@
 #  ----------------------------------------------------------------
 #  Announces itself
 #  ----------------------------------------------------------------
-echo start postrm 05236e14
+echo start postrm 05236e14.  The action is ${action}
+echo 
 if [ "$action" = "purge" ] ; then
 	deluser cpc
 fi

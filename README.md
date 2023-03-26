@@ -16,12 +16,15 @@ The support scripts create the system account cpc.
 TO USE
 
 TO INSTALL, use the following Linux commands.  Step 1 and 3 are performed while online.
+In step 6, the parameter --root-owner-group may be removed
 
 1. git clone https://github.com/a-mcintosh/cpc2deb.git /tmp/cpc2deb
 2. cd /tmp/cpc2deb/deb/opt/cpc/distr
 3. wget http://zinnamturm.eu/pac/BlackBox-2302-core.7z
-4. dpkg-deb --root-owner-group -b /tmp/cpc2deb/deb /tmp/cpc_1.8.2302.039-focal_amd64.deb
-5. sudo apt install -o Acquire::AllowUnsizedPackages=1 /tmp/cpc_1.8.2302.039-focal_amd64.deb
+4. mkdir -p /tmp/cpc2deb/deb/$HOME/opt	**optional, not supported, hook for future development**
+5. touch /tmp/cpc2deb/deb/$HOME/opt/alternate-location-for-cpc-template
+6. dpkg-deb --root-owner-group -b /tmp/cpc2deb/deb /tmp/cpc_1.8.2302.044-focal_amd64.deb
+7. sudo apt install -o Acquire::AllowUnsizedPackages=1 /tmp/cpc_1.8.2302.044-focal_amd64.deb
 
 TO REMOVE.  **N.b.** *this removes account cpc*
 1. deb -r cpc
