@@ -8,4 +8,5 @@ Name[en_US]=ComponentPascal
 Name=ComponentPascal
 Comment[en_US]=A universal CPC desktop file. N.b. the use of relative paths, possibly to softlinks
 Path=opt/cpc/lib
+Icon=/opt/cpc/BlackBox-2302-core/Win/Rsrc/Applogo.png
 

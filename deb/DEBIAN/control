@@ -3,7 +3,7 @@ Section: devel
 Maintainer: Aubrey McIntosh <aubrey.mcintosh@utexas.edu>
 Homepage: https://github.com/amcintosh/CPC
 Package: cpc
-Version: 1.8.2302.043
+Version: 1.8.2302.044
 Priority: optional
 Size: 7168
 Installed-Size: 33088
